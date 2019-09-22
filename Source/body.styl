@@ -1,0 +1,169 @@
+.text, .tag, .attribute_name, .text, .white, .attribute_value, .attribute_name, .oper, .str, .func, .comment
+	white-space pre-wrap
+.tag
+	white-space pre
+.line
+	display flex
+	flex-wrap nowrap
+	width 100%
+
+.comment
+	color #888
+
+.white
+	color #fff
+
+// .h1
+// 	font-size 2rem
+// 	margin-bottom 0.2rem
+// .h2
+// 	font-size 1.5rem
+// 	margin-bottom 0.2rem
+// .h3
+// 	font-size 1.17rem
+// 	margin-bottom 0.2rem
+// .h4
+// 	font-size 1rem
+// 	margin-bottom 0.2rem
+// .h5
+// 	font-size .83rem
+// 	margin-bottom 0.2rem
+// .h6
+// 	font-size .67rem
+// 	margin-bottom 0.2rem
+
+a[class~="button"], div[class~="button"]
+	display block
+	cursor pointer
+	padding 5px 15px
+	margin 10px 10px 10px 0 
+	text-decoration none
+
+.code
+	border 1px #888
+	margin 10px
+	padding 10px
+
+.body_menu
+	display flex
+	min-height 100%
+
+#body_wrap
+	overflow auto
+	margin-top 60px	
+
+#body
+	display flex
+	flex-wrap wrap
+	padding-top 18px
+	.card
+		background-color inherit
+#menu
+	display none
+	padding-top 10px
+	padding-bottom 10px
+	margin-top 60px	
+	// overflow-y auto
+#FontInput
+	width 100%
+	border-color rgba(155,155,155 .2)
+.see
+	display block !important
+
+.accent
+	animation accent 2s infinite linear
+
+@keyframes accent
+	0%
+		background rgba(255,255,255 .2)
+	30%
+		background rgba(0,0,0 .2)
+	100%
+		background rgba(255,255,255 .2)
+
+.menu_item, .menu_item_wrap
+	padding 5px 15px
+	white-space nowrap
+	cursor pointer
+	box-sizing border-box
+
+.menu_item_wrap
+	display flex
+	padding 0
+
+.menu_item_header
+	padding 15px 15px 0 15px
+
+.end
+	margin-left auto
+
+.Theme_dark
+	color #fff
+	background #1e1e1e
+	.text
+		color #eee
+	#menu
+		color #ccc
+		background rgba(8, 8, 8, .8)
+	.code
+		background rgba(0, 0, 0, .5)
+	a[class~="button"], div[class~="button"]
+		border 1px solid #eee
+		color #fff
+	a[class~="button"]:hover, div[class~="button"]:hover, #FontInput:hover
+		background #000
+		color #fff
+	.menu_item_active
+		border 1px solid #eee
+	.menu_item:hover, .menu_item_active
+		background #000
+		color #fff
+	.menu_item_header:hover
+		color #ccc
+		background rgba(8, 8, 8, .0)
+	#FontInput
+		background rgba(8, 8, 8, .0)
+		color #ccc
+
+.Theme_lite
+	color #000
+	background #eeeeee
+	.text
+		color #222
+	#menu
+		color #333
+		background rgba(222, 222, 222, .8)
+	.code
+		background rgba(256, 256, 256, .5)
+	a[class~="button"], div[class~="button"]
+		border 1px solid #444
+		color #000
+	.menu_item_active
+		border 1px solid #444
+	.menu_item:hover, .menu_item_active, a[class~="button"]:hover, div[class~="button"]:hover, #FontInput:hover
+		background #fff
+		color #000
+	.attribute_name
+		color #800000
+	.menu_item_header:hover
+		color #333
+		background rgba(8, 8, 8, .0)
+	#FontInput
+		background rgba(222, 222, 222, .8)
+		color #333
+#correctly, #wrong
+	display none
+	position absolute
+	top 60%
+	left 45%
+	font-size 88px
+	opacity .6
+	
+#correctly, .correctly
+	color #32cd32
+#wrong, .wrong
+	color red
+.correctly *
+	pointer-events none
+.wrong *
+	pointer-events none

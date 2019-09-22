@@ -1,0 +1,143 @@
+header
+	display flex
+	justify-content space-between
+	align-items center
+	top 0
+	right 0
+	left 0
+	height 60px
+	z-index 1
+
+#options
+	display flex
+	flex-direction column
+	justify-content space-between
+	height 100%
+	width 60px
+	padding 20px 18px
+
+.burger_line
+	height 2px
+	width 100%
+
+.player
+	display flex
+	flex-direction column
+	flex-grow 1
+	height 100%
+
+#wrapButtonPlayer
+	display flex
+	justify-content center
+	height 70%
+#wrapButtonPlayer *
+	height 100%
+	padding 0px 10px 4px 12px
+
+#rewind_play
+	display none
+
+#rewind
+	display flex
+	margin 0 5%
+	height 30%
+	cursor pointer
+
+.rewind_item
+	display flex
+	flex-grow 1
+	height 100%
+
+#fullScreen, #closeFullScreen
+	height 100%
+	width 60px
+	padding 20px 18px
+	cursor pointer
+.fullScreen_icon
+	height 100%
+	width 100%
+	& .fullScreen_icon
+		margin 5px 3px 2px 2px
+		height 68%
+		width 70%
+#closeFullScreen
+	display none
+	height 100%
+
+.Theme_dark
+	.fullScreen_icon
+		border solid 1px #ccc
+		& .fullScreen_icon
+			border-top solid 3px #ccc
+	#fullScreen, #closeFullScreen
+		&:hover
+			background #000
+			& .fullScreen_icon
+				border solid 1px #fff
+				& .fullScreen_icon
+					border-top solid 3px #fff
+	.rewind_item
+		background #444
+		&:hover
+			background #fff
+	#rewind
+		background #222
+	.rewind_active
+		background #888
+	#wrapButtonPlayer svg
+		fill #ccc
+		&:hover
+			fill #fff
+			cursor pointer
+	.burger_line
+		background #ccc
+	header
+		color #ccc
+		background-color rgba(8, 8, 8, .8)
+	#options:hover
+		background #000
+		cursor pointer
+	#options:hover .burger_line
+		background #fff
+.Theme_lite
+	.fullScreen_icon
+		border solid 1px #333
+		& .fullScreen_icon
+			border-top solid 3px #333
+	#fullScreen, #closeFullScreen
+		&:hover
+			background #fff
+			& .fullScreen_icon
+				border solid 1px #000
+				& .fullScreen_icon
+					border-top solid 3px #000
+	.rewind_item
+		background #999
+		&:hover
+			background #333
+	#rewind
+		background #ccc
+	.rewind_active
+		background #666
+	#wrapButtonPlayer svg
+		fill #333
+		&:hover
+			fill #000
+			cursor pointer
+	.burger_line
+		background #444
+	header
+		color #333
+		background-color rgba(222, 222, 222, .8)
+	#options:hover
+		background #fff
+		cursor pointer
+	#options:hover .burger_line
+		background #000
+
+
+
+
+
+
+

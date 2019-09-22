@@ -1,0 +1,755 @@
+`slide: 
+	see:
+		h1 text line: HTML & CSS
+		col:
+			h3 text line: HTML
+			html line: <div onclick = "run(3)" class="text a pointer">Тегы</div>
+			html line: <div onclick = "run(4)" class="text a pointer">Атрибуты</div>
+			html line: <div onclick = "run(5)" class="text a pointer">Текст</div>
+			html line: <div onclick = "run(14)" class="text a pointer">Ссылки</div>
+			html line: <div onclick = "run(15)" class="text a pointer">Изображения</div>
+			html line: <div onclick = "run(16)" class="text a pointer">Списки</div>
+			html line: <div onclick = "run(17)" class="text a pointer">Ввод</div>
+			html line: <div onclick = "run(18)" class="text a pointer">Тести</div>
+			html line: <div onclick = "run(19)" class="text a pointer">Практика</div>
+			html line: <div onclick = "run(21)" class="text a pointer">Полезные ссылки</div>
+		col:
+			h3 text line: CSS
+	time: 4000
+	globalStyle: .attribute_name{color: #8ef;white-space: pre-wrap;}.tag{color: #27e;white-space: pre-wrap;}.attribute_value{color: #f60;white-space: pre-wrap;}.selector{color: #770;white-space: pre-wrap;}.property{color: #6de;white-space: pre-wrap;}.Theme_lite .property{color: #29a;white-space: pre-wrap;}.value{color: #ccb;white-space: pre-wrap;}.Theme_lite .value{color: #332;white-space: pre-wrap;}.pseudo{color: #c83;white-space: pre-wrap;}
+slide:
+	see:
+		h2 text line: HTML - (Hyper Text Markup Language) - Язык гипертекстовой разметки
+		text line: Является стандартным языком разметки для создания веб-страниц и веб-приложений. С помощью каскадных таблиц стилей (CSS) и JavaScript (JS) он образует триаду краеугольных технологий для World Wide Web.
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text line: Hello World
+		text line: В редакторе текста или кода (Sublime Text, Visual Studio Code ...) нажмите "Файл" > "Создать новый файл", напишите код.
+		html line: <a class="button" href="http://">Open in CodePen</a><div class="button" onclick="copyCode()" >Copy code</div>
+		code w-100:
+			tag: <html>
+			tag: 	<body>
+			text: 		Привет мир
+			tag: 	</body>
+			tag: </html>
+		text w-100: Нажмите "Файл" > "Сохранить как...", выберите папку, имя файла - "Hello world.html", нажмите "Сохранить", откройте файл в браузере.
+	copyCode: <html>\\n	<head>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		line h1 text: Теги
+		code:
+			line comment: // синтаксис
+			line tag: <имя тега>
+			line tag: <имя тега></имя тега>
+			line comment: // пример
+			line tag: <input>
+			line tag: <button>
+			line tag: <p></p>
+			line tag: <div></div>
+	voice: HTML_RU_tag_type
+	time: 6000
+slide:
+	see:
+		line h1 text: Атрибуты
+		code:
+			line comment: // синтаксис
+			line:
+				attribute_name: название
+			line:
+				attribute_name: название=
+				attribute_value: "значение"
+			line comment: // примеры
+			line:
+				attribute_name: checked
+			line:
+				attribute_name: class=
+				attribute_value: "navigation"
+			line:
+				attribute_name: id=
+				attribute_value: "footer"
+	voice: HTML_RU_tag_type
+	time: 6000
+slide:
+	see:
+		h1 text: Текст
+		line text: Вся текстовая информация, отображаемая на сайте, размещается внутри тегов внутри тега <body></body>. По умолчанию переносы строк в коде неработают на сайте, пробелы больше 1 отображаются как 1. Используя элемент  <pre></pre>, содержимое отображается именно так, как оно указано в коде, с учётом всех пробелов, переносов.
+	voice: HTML_RU
+	time: 12000
+slide:
+	see:
+		line h1 text: Тег + атрибут + текст = элемент
+		line: 
+			html: <a class="button" href="http://">Open in CodePen</a>
+			html: <div class="button" onclick="copyCode()" >Copy code</div>
+		code w-100:
+			line:
+				tag: <div></div>
+			line:
+				tag: <div>
+				text: Содержымое тега
+				tag: </div>
+			line:
+				tag: <div 
+				attribute_name: id=
+				attribute_value: "idName"
+				tag: >
+				text: Содержымое тега
+				tag: </div>
+			line tag: <body>
+			line:
+				tag: 	<div 
+				attribute_name: class=
+				attribute_value: "className"
+				tag: >
+				text: Текст
+				tag: </div>
+			line:
+				tag: 	<input 
+				attribute_name: type=
+				attribute_value: "checkbox"
+				attribute_name:  checked
+				tag: >
+			line tag: </body>
+			line:
+		line comment: Где
+		line:
+			tag: <body></body>, <div></div>
+			text:  - парный тег (контейнер).
+		line:
+			tag: <input>
+			text:  - одиночный тег.
+		line:
+			attribute_name: checked
+			text:  - атрибут.
+		line:
+			attribute_name: id=
+			attribute_value: "idName", 
+			attribute_name: class=
+			attribute_value: "className", 
+			attribute_name: type=
+			attribute_value: "checkbox"
+			text:  - атрибут со значениям.
+		line text: Текст - текст.
+	voice: HTML_RU_tag_attribute
+	time: 12000
+slide:
+	see:
+		line h3 text: Теги для текста:
+		line:
+			text: Теги заголовков: 
+			tag: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+		line:
+			text: Форматирования текста:
+			tag:  <b>, <em>, <i>, <small>, <strong>, <sub>, <sup>, <ins>, <del>
+		line:
+			text: Абзацы, средства переноса текста:
+			tag:  <p>, <br>, <hr>
+		line:
+			text: Теги ввода «компьютерного» текста:
+			tag:  <code>, <kbd>, <samp>, <var>, <pre>
+		line:
+			text: Теги оформления цитат и определений:
+			tag:  <abbr>, <bdo>, <blockquote>, <q>, <cite>, <dfn>
+	voice: HTML_RU
+	time: 12000
+slide:
+	see:
+		line h3 text: Типы тегов
+		line text: теги верхнего уровня;
+		line text: теги заголовка документа;
+		line text: блочные элементы;
+		line text: строчные элементы;
+		line text: списки;
+		line text: таблицы;
+		line text: фреймы;
+		line text: универсальные элементы.
+	voice: HTML_RU_tag_type
+	time: 6000
+slide:
+	see:
+		line h1 text: Теги верхнего уровня
+		line tag: <html></html>
+		line tag: <head></head>
+		line tag: <body></body>
+	voice: HTML_RU_tag_type
+	time: 6000
+slide:
+	see:
+		line h1 text: Теги заголовка документа
+		code:
+			line tag: <head>
+			line:
+				tag: 	<title>
+				text: title
+				tag: </title>
+			line:
+				tag: 	<meta 
+				attribute_name: charset=
+				attribute_value: "utf-8"
+				tag: >
+			line:
+				tag: 	<meta 
+				attribute_name: name=
+				attribute_value: "description" 
+				attribute_name: content=
+				attribute_value: "описания веб-страницы"
+				tag: >
+			line:
+				tag: 	<meta 
+				attribute_name: name=
+				attribute_value: "keywords" 
+				attribute_name: content=
+				attribute_value: "ключевые слова для поисковых систем"
+				tag: >
+			line:
+				tag: 	<link 
+				attribute_name: rel=
+				attribute_value: "stylesheet" 
+				attribute_name: href=
+				attribute_value: "style.css"
+				tag: >
+			line tag: </head>
+		line comment: Где
+		line:
+			tag: <link>
+			text:  - Определяет отношения между документом и внешним ресурсом. Также используется для подключения внешних таблиц стилей и кода.
+	voice: HTML_RU_tag_type
+	time: 8000
+slide:
+	see:
+		h2: Блочные элементы
+		text line: Блочным называется элемент, который занимает всю доступную ширину и всегда начинается с новой строки. У элементов с таким поведением в стилях свойство "display" задано как "block", "list-item", "table". По умолчанию блочные элементы <div>, <section>, <h1>…<h6>, <p>, <ol>, <ul>, <address>, <blockquote> и др. На блочные элементы не действуют свойства, предназначенные для строчных элементов. В некоторых случаях требуется наделить строчный элемент характеристиками блочного это можно зделать с помощю CSS.
+		code:
+			line tag: <body>
+			line:
+				tag: 	<div>
+				text: Блок 1
+				tag: </div>
+			line:
+				tag: 	<section>
+				text: Блок 2
+				tag: </section>
+			line tag: </body>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h2: Строчные элементы
+		text line: Строчными называются такие элементы, которые являются непосредственной частью строки, у них значение свойства display установлено как inline. По умолчанию блочные элементы <span>, <a>, <q>, <code> и др. На строчные элементы не действуют свойства, предназначенные для блочных элементов, в основном они используются для изменения вида текста или его смыслового выделения. В некоторых случаях требуется наделить блочный элемент характеристиками строчного это можно зделать с помощю CSS.
+		code:
+			line tag: <body>
+			line:
+				tag: 	<span>
+				text: Текст 1
+				tag: </span>
+			line:
+				tag: 	<span>
+				text: Текст 2
+				tag: </span>
+			line tag: </body>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h2: Строчно-блочные элементы
+		text line: Строчно-блочными называются такие элементы, которые являются непосредственной частью строки и також действуют свойства, предназначенные для блочных элементов, у них значение свойства display установлено как "inline-block". По умолчанию cтрочно-блочные элементы <button>, <input>, <textarea>, <select> и др. В некоторых случаях требуется наделить блочный, строчный элемент характеристиками строчно-блочного это можно зделать с помощю CSS.
+		code:
+			line tag: <body>
+			line:
+				tag: 	<button
+				attribute_name:  value=
+				attribute_value: "Кнопка"
+				tag: >
+			line:
+				tag: 	<input
+				attribute_name:  value=
+				attribute_value: "Текст"
+				tag: >
+			line tag: </body>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text: Ссылки
+		line:
+			tag: <a
+			attribute_name:  href=
+			attribute_value: "https://html5book.ru/hyperlinks-in-html/"
+			tag: >
+			text: Ссылкa
+			tag: </a>
+		line:
+			tag: <a
+			attribute_name:  href=
+			attribute_value: "https://html5book.ru/hyperlinks-in-html/"
+			attribute_name:  target=
+			attribute_value: "_blank"
+			tag: >
+			text: Ссылкa
+			tag: </a>
+		h3 text: якорь
+		line:
+			tag: <a
+			attribute_name:  href=
+			attribute_value: "#contakts"
+			tag: >
+			text: Проскролить к разделу контакты.
+			tag: </a>
+		line comment: Где
+		line:
+			attribute_name: target=
+			attribute_value: "_self"
+			text:  - страница загружается в текущее окно;
+		line:
+			attribute_name: target=
+			attribute_value: "_blank"
+			text:  - страница открывается в новом окне браузера;
+		line:
+			attribute_name: target=
+			attribute_value: "_parent"
+			text:  - страница загружается во фрейм-родитель;
+		line:
+			attribute_name: target=
+			attribute_value: "_top"
+			text:  - страница загружается в полное окно браузера.
+		line:
+			attribute_name: download
+			text:  - download.
+	voice: HTML_RU_Hello_World
+	time: 14000
+slide:
+	see:
+		h1 text: Изображения
+		line:
+			tag: <img 
+			attribute_name: src=
+			attribute_value: "image.png"
+			attribute_name:  alt=
+			attribute_value: "альтернативный текст"
+			tag: >
+		line comment: Где
+		line:
+			tag: <img>
+			text:  - cпециальный тег
+		line:
+			attribute_name: src
+			text:  (source - источник) cпециальный атрибут
+		line:
+			attribute_value: "image.png"
+			text: - ссылка на изображения.
+		line:
+			attribute_name: alt 
+			text: (alternative - альтернатива)  cпециальный атрибут.
+		line:
+			attribute_value: "альтернативный текст"
+			text:  - текст который отображаеться до загрузки изображения и при наведении курсора на изображения.
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text line: Списки
+		 col code w-100:
+			line:
+				tag: <ul
+				attribute_name:  type=
+				attribute_value: "disc"
+				tag: >
+			line:
+				tag: 	<li>
+				text: Первый пункт
+				tag: <li>
+			line:
+				tag: 	<li>
+				text: Второй пункт
+				tag: <li>
+			line:
+				tag: 	<li>
+				text: Третий пункт
+				tag: <li>
+			tag line: </ul>
+		 col code w-100:
+			line:
+				tag: <ol
+				attribute_name:  type=
+				attribute_value: "1"
+				attribute_name:  start=
+				attribute_value: "1"
+				tag: >
+			line:
+				tag: 	<li>
+				text: Первый пункт
+				tag: <li>
+			line:
+				tag: 	<li>
+				text: Второй пункт
+				tag: <li>
+			line:
+				tag: 	<li>
+				text: Третий пункт
+				tag: <li>
+			tag line: </ol>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		line h1 text: Ввод
+		code:
+			line:
+				tag: <input
+				attribute_name:  type=
+				attribute_value: "text"
+				attribute_name:  value=
+				attribute_value: ""
+				attribute_name:  placeholder=
+				attribute_value: "введите чтото"
+				attribute_name:  autofocus
+				attribute_name:  required
+				tag: >
+		line:
+			attribute_name: type=
+			attribute_value: "text"
+			text:  Текстовое поле. Предназначено для ввода символов с помощью клавиатуры.
+		line:
+			attribute_name: value=
+			attribute_value: ""
+			text:  Введённый текст.
+		line:
+			attribute_name: placeholder=
+			attribute_value: "введите чтото"
+			text:  Предварительно показываемый текст.
+		line:
+			attribute_name: autofocus
+			text:  Устанавливает фокус в поле формы.
+		line:
+			attribute_name: required
+			text:  Обязательное для заполнения поле.
+		code:
+			line:
+				tag: <input
+				attribute_name:  type=
+				attribute_value: "button"
+				attribute_name:  value=
+				attribute_value: "Кнопка"
+				tag: >
+		line:
+			attribute_name: type=
+			attribute_value: "button"
+			text:  Кнопка.
+		line:
+			attribute_name: value=
+			attribute_value: "Кнопка"
+			text:  Текстовая надпись.
+		code:
+			line:
+				comment: 1.
+				tag:  <label
+				attribute_name:  for=
+				attribute_value: "id_group_yes"
+				tag: >
+				text:  Да.
+				tag: </label>
+			line:
+				tag: <input
+				attribute_name:  type=
+				attribute_value: "radio"
+				attribute_name:  name=
+				attribute_value: "group1"
+				attribute_name:  id=
+				attribute_value: "group1_yes"
+				attribute_name:  value=
+				attribute_value: "yes"
+				attribute_name:  checked
+				tag: >
+			line:
+				comment: 2.
+				tag:  <label>
+				text:  Нет.
+			line:
+				tag: 	<input
+				attribute_name:  type=
+				attribute_value: "radio"
+				attribute_name:  name=
+				attribute_value: "group1"
+				attribute_name:  value=
+				attribute_value: "no"
+				tag: >
+			line:
+				tag: </label>
+		line:
+			attribute_name: type=
+			attribute_value: "radio"
+			text:  Переключатели. Используются, когда следует выбрать один вариант из нескольких предложенных.
+		line:
+			attribute_name: name=
+			attribute_value: "group1"
+			text:  Обединяет переключатели в одну групу.
+		line:
+			attribute_name: value=
+			attribute_value: "yes"
+			text:  Ето значения у выбраного переключателя будет одправленно на сервер.
+		line:
+			tag: <label></label>
+			text:  Связывает содержымое с "input". То есть клик по содержымому щитаеться как клик по "input".
+		line:
+			attribute_name: for=
+			attribute_value: "group1_yes"
+			text:  Указывает на "input" c "id=group1_yes" для связи. В другом примере нету "for", "id" так как "input" внутри "label".
+	voice: HTML_RU_tag_type
+	time: 8000
+slide:
+	see:
+		line text h1: Тести
+		line text: Выберите правильную разметку
+		code wrong w-100:
+			line tag: body
+			line:
+				tag: 	div 
+				attribute_name: class=
+				attribute_value: "className"
+				text: Текст
+				tag: div
+			line:
+				tag: 	input 
+				attribute_name: type=
+				attribute_value: "checkbox"
+				attribute_name:  checked
+			line tag: body
+		code correctly w-100:
+			line tag: <body>
+			line:
+				tag: 	<div 
+				attribute_name: id=
+				attribute_value: "idName"
+				tag: >
+				text: Привет
+				tag: </div>
+			line:
+				tag: 	<input 
+				attribute_name: type=
+				attribute_value: "text"
+				tag: >
+			line tag: </body>
+		code wrong w-100:
+			line tag: <body>
+			line:
+				tag: 	<div 
+				attribute_name: id=
+				attribute_value: "idName"
+				tag: >
+				text: Привет
+			line:
+				tag: 	<input 
+				attribute_name: type=
+				attribute_value: "text"
+				tag: >
+			line tag: </div>
+	voice: HTML_RU_Hello_World
+	time: 12000
+slide:
+	see:
+		html line w-100: <a class="button" href="http://">Open in CodePen</a><div class="button" onclick="copyCode()" >Copy code</div>
+		col code w-100:
+			tag: <html>
+			tag: 	<head>
+			line:
+				tag: 		<title>
+				text: Практика
+				tag: </title>
+			tag: 	</head>
+			tag: 	<body>
+			tag: 		<nav>
+			line:
+				tag: 			<a 
+				attribute_name: href=
+				attribute_value: "#"
+				tag: >
+				text: Главна
+				tag: </a>
+			line:
+				tag: 			<a 
+				attribute_name: href=
+				attribute_value: "#"
+				tag: >
+				text: Продукты
+				tag: </a>
+			line:
+				tag: 			<a 
+				attribute_name: href=
+				attribute_value: "#"
+				tag: >
+				text: О нас
+				tag: </a>
+			tag: 		</nav>
+			tag: 		<hr>
+			line:
+				tag: 		<h1>
+				text: Ну очень простой сайт
+				tag: </h1>
+			line:
+				tag: 		<p>
+				text: Для более красивого дизайна нужно изучить CSS.
+				tag: </p>
+			line:
+				tag: 		<p>
+				text: Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+				tag: </p>
+			line:
+				tag: 		<a 
+				attribute_name: href=
+				attribute_value: "#"
+				tag: >
+				text: Ссылка на другую страницу
+				tag: </a>
+			tag: 	</body>
+			tag: </html>
+	voice: HTML_RU_Hello_World
+	time: 11000
+slide:
+	see:
+		h1 text: Cовет.
+		line text: Для более быстрого написания кода используйте плагин "EMMET".
+		line text: На самом деле тегов и атрибутов больше, здесь росписаны самые используемые.
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text: Полезные ссылки.
+		line html: <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics">"Mozilla Developer N web docs" - Веб документация</a>
+		line html: <a href="https://webref.ru/">"WebReference" - Справочник, практика, тесты.</a>
+		line html: <a href="https://html5book.ru/">"HTML5 BOOK" - Учебник</a>
+		line html: <a href="http://htmlbook.ru/">"HTML book" - Учебник</a>
+		line html: <a href="https://codebra.ru/">"CODEBRA" - Учебник с практикой</a>
+		line html: <a href="www.cyberforum.ru/">"CyberForum" - Форум</a>
+		line html: <a href="https://ru.stackoverflow.com/">"StackOverflow" - Форум</a>
+		line html: <a href="http://programmersforum.ru/">"Клуб ПРОграммистов" - Форум</a>
+		line html: <a href="http://forum.vingrad.ru/">"VINGRAD" - Форум</a>
+		line html: <a href="http://www.html.by/">"HTML" - Форум</a>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text: CSS (Cascading Style Sheets) — Каскадные таблицы стилей
+		text: Обычно CSS-стили используются для создания и изменения стиля элементов веб-страниц и веб-приложений, написанных на HTML. Объявление стиля состоит из двух частей: селектора и объявления. Селектор сообщает браузеру, какой именно элемент форматировать, а в блоке объявления перечисляются форматирующие команды — свойства и значения.
+		code:
+			line:
+				comment: // синтаксис
+			line:
+				selector: селектор
+				text:  {
+			line:
+				property: 	свойство
+				value: : значения;
+			line:
+				text: }
+			line:
+				comment: // пример
+			line:
+				selector: header .menu
+				text:  {
+			line:
+				property: 	margin
+				value: : 3%;
+			line:
+				property: 	padding
+				value: : 30px;
+			line:
+				text: }
+	voice: CSS_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text line: Hello World
+		text line: В редакторе текста или кода (Sublime Text, Visual Studio Code ...) нажмите "Файл" > "Создать новый файл", напишите код.
+		html line: <a class="button" href="http://">Open in CodePen</a><div class="button" onclick="copyCode()" >Copy code</div>
+		code w-100:
+			line:
+				tag: <link
+				attribute_name:  rel=
+				attribute_value: "stylesheet"
+				attribute_name:  href=
+				attribute_value: "style.css"
+				tag: >
+			line:
+				tag: <body>
+				text: Привет мир
+				tag: </body>
+		text line: Нажмите "Файл" > "Сохранить как...", выберите папку, имя файла - "index.html", нажмите "Сохранить".
+		text line: Нажмите "Файл" > "Создать новый файл", напишите код.
+		html line: <a class="button" href="http://">Open in CodePen</a><div class="button" onclick="copyCode()" >Copy code</div>
+		code w-100:
+			line:
+				selector: body
+				text:  {
+			line:
+				property: 	color
+				value: : green;
+			line:
+				property: 	font-size
+				value: : 48px;
+			line:
+				text: }
+		text w-100: Нажмите "Файл" > "Сохранить как...", выберите ту самую папку, имя файла - "style.css", нажмите "Сохранить", откройте файл "index.html"  в браузере (советую - "Google Chrome").
+	copyCode: <html>\\n	<head>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text: Подключение стилей
+		h4 text line: Через атрибут "style" (встроенные стили)
+		code line w-100:
+			tag: <body
+			attribute_name:  style=
+			attribute_value: "font-size: 38px;"
+			tag: >
+			text: текст
+			tag: </body>
+		h4 text: Через тег "<style></style>" (внутренние стили)
+		code w-100:
+			line:
+				tag: <body>
+				text: текст
+				tag: </body>
+			line:
+				tag: <style>
+				selector: body
+				text:  {
+				property: color
+				value: : green;
+				text: }
+				tag: </style>
+		h4 text: Через тег "<link>" (внешняя таблица стилей)
+		code w-100 line:
+			tag: <link
+			attribute_name:  rel=
+			attribute_value: "stylesheet"
+			attribute_name:  href=
+			attribute_value: "style.css"
+			tag: >
+	voice: CSS_RU_
+	time: 8000
+slide:
+	see:
+		h1 text: Полезные
+		col:
+		code w-100:
+			line:
+				tag: <body>
+				attribute_name: class=
+				attribute_value: "className"
+				text: текст
+		w-100:
+		line:
+			selector: div
+			pseudo: :after
+			text: {
+			property: margin
+			value:  : 30px
+			text: }
+	voice: HTML_RU_
+	voice: CSS_RU_
+	time: 8000
+	`

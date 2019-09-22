@@ -1,0 +1,406 @@
+`slide: 
+	see:
+		h1 text line: Java Script
+		h3 text line: Основы
+		html line: <div onclick = "run(4)" class="text a pointer">Текст</div>
+		html line: <div onclick = "run(7)" class="text a pointer"></div>
+		html line: <div onclick = "run(9)" class="text a pointer"></div>
+		html line: <div onclick = "run(9)" class="text a pointer"></div>
+		html line: <div onclick = "run(8)" class="text a pointer">Тести</div>
+		html line: <div onclick = "run(9)" class="text a pointer">Практика</div>
+		h3 text line: DOM
+	time: 4000
+	globalStyle: .attribute_name{color: #8ef}.tag{color: #27e;}.attribute_value{color: #f06500;}.func{color: #4bd;white-space: pre-wrap;}.Theme_dark .name{color: #eee;white-space: pre-wrap;}.Theme_lite .name{color: #111;white-space: pre-wrap;}.Theme_dark .str{color: #ec5;white-space: pre-wrap;}.Theme_lite .str{color: #a91;white-space: pre-wrap;}.oper{color: #a22622;white-space: pre-wrap;}.number{color: #77d;white-space: pre-wrap;}
+slide:
+	see:
+		h1 text line: Java Script
+		text line: JS - это легковесный, интерпретируемый или JIT-компилируемый, объектно-ориентированный язык с функциями первого класса. Наиболее широкое применение находит как язык сценариев веб-страниц, но также используется и в других программных продуктах, например, node.js или Apache CouchDB. JavaScript это прототипно-ориентированный, мультипарадигменный язык с динамической типизацией, который поддерживает объектно-ориентированный, императивный и декларативный (например, функциональное программирование) стили программирования.
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		h1 text line: Hello World
+		text line: В редакторе текста или кода (Sublime Text, Visual Studio Code ...) нажмите "Файл" > "Создать новый файл", напишите код.
+		html line: <a class="button" href="http://">Open in CodePen</a><div class="button" onclick="copyCode()" >Copy code</div>
+		code  line:
+			tag: <script
+			attribute_name:  src=
+			attribute_value: "script.js"
+			tag: >
+			tag: </script>
+		text line: Нажмите "Файл" > "Сохранить как...", выберите папку, имя файла - "index.html", нажмите "Сохранить".
+		text line: Нажмите "Файл" > "Создать новый файл", напишите код.
+		html line: <a class="button" href="http://">Open in CodePen</a><div class="button" onclick="copyCode()" >Copy code</div>
+		code line:
+			func: alert
+			text: (
+			str: "Привет мир"
+			text: )
+		text w-100: Нажмите "Файл" > "Сохранить как...", выберите ту самую папку, имя файла - "script.js", нажмите "Сохранить", откройте файл "index.html"  в браузере (советую - "Google Chrome").
+	copyCode: <html>\\n	<head>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		line h1: Переменные
+		line text: Переменная — именованная часть памяти, в которую могут помещаться разные значения.
+		code:
+			line:
+				func: var
+				text:  name
+			comment:  // объявления переменной
+			line:
+				text: name
+				oper:  =
+				str:  "Текст"
+			comment: // присвоения переменной значения
+			line:
+				func: var
+				text:  name
+				oper:  =
+				str:  "Текст"
+			comment: // объявления переменной и присвоения значения
+			line:
+				func: let
+				text:  name2
+				oper:  =
+				text:  8
+			comment: // объявления переменной и присвоения значения
+			line:
+				func: const
+				text:  name3
+				oper:  =
+				text:  name2
+			comment: // объявления переменной и присвоения значения
+			line:
+				text: name2
+			comment: // получения значения
+		line comment: Где
+		line:
+			func: var, let, const
+			text:  - ключевое слово
+		line:
+			oper: =
+			text:  - оператор присвоения
+		line:
+			text: name, name2, name3
+			text:  - имя переменной
+		line text: 	Имя переменной может содержать буквы, цифры, знак подчеркивания "_" и знак доллара "$", не может начинаться с цифры.
+		line text: 	Переменная обявленная ключевим словом "var" означает: одно имя - одна переменная, то есть при обявлении переменной с таким же именем вы перезапишете ранее созданую.
+		line text: 	Переменная обявленная ключевим словом "const" - неперезаписываемая.
+		line text: 	Переменных обявленных ключевим словом "let" может быть несколько с одним и тем же именем но в разных областях видимости (например: внутри функций).
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		col:
+		line h1: Типы данных
+		line: 
+			text: Первые шесть типов данных являются примитивами:
+		line: 
+			comment: 1.
+			text:  Boolean (true, false)
+		line: 
+			comment: 2.
+			text:  null
+		line: 
+			comment: 3.
+			text:  undefined
+		line: 
+			comment: 4.
+			text:  Number (12, 3.1)
+		line: 
+			comment: 5.
+			text:  String ("Текст в кавычках")
+		line: 
+			comment: 6.
+			text:  Symbol
+		line: 
+			comment: 7.
+			text:  Object
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		line h1: Массивы
+		code w-100:
+			comment: // синтаксис
+			line:
+				text: [
+				str: значения
+				oper: ,
+				str:  значения
+				text: ]
+			comment: // масcив с разными данными
+			line:
+				text: [
+				str: "Строка"
+				oper: ,
+				number:  1
+				oper: , 
+				number: true
+				oper: , 
+				text: []
+				oper: , 
+				text: {}
+				text: ]
+			line:
+				func: var
+				text:  array
+				oper:  =
+				text:  [
+				str: "Строка"
+				oper: ,
+				number:  1
+				oper: , 
+				number: true
+				oper: , 
+				text: []
+				oper: , 
+				text: {}
+				text: ]
+			line:
+				text: array[
+				number: 0
+				text: ] 
+				comment: // "Строка"
+			line:
+				text: array[
+				number: 1
+				text: ] 
+				comment: // 1
+			line:
+				text: array[
+				number: 2
+				text: ] 
+				comment: // true
+			line:
+				text: array[
+				number: 3
+				text: ] 
+				comment: // []
+			line:
+				text: array[
+				number: 4
+				text: ] 
+				comment: // {}
+	voice: HTML_RU_Hello_World
+	time: 16000
+slide:
+	see:
+		line h1: Объекты
+		code w-100:
+			comment: // синтаксис
+			line:
+				text: {
+				str: ключ
+				text: :
+				str:  значения
+				oper: ,
+				str:  ключ
+				text: :
+				str:  значения
+				text: }
+			comment: // объект с разными данными
+			line:
+				text: {
+				str: "key1"
+				text: :
+				str:  "Строка"
+				oper: ,
+				str:  "key2"
+				text: :
+				number:  1
+				oper: ,
+				str:  "key3"
+				text: :
+				number:  true
+				oper: , 
+				str:  "key4"
+				text: :
+				text:  []
+				oper: , 
+				str:  "key5"
+				text: :
+				text:  {}
+				text: }
+			line:
+				func: var
+				text:  object
+				oper:  =
+				text:  {
+				str: "key1"
+				text: :
+				str:  "Строка"
+				oper: ,
+				str:  "key2"
+				text: :
+				number:  1
+				oper: , 
+				str:  "key3"
+				text: :
+				number:  true
+				text: }
+			line text:
+			line:
+				text: object.key1 
+				comment: // "Строка"
+			line:
+				text: object.key2 
+				comment: // 1
+			line:
+				text: object.key3 
+				comment: // true
+			line:
+				text: object[
+				str: "key1"
+				text: ] 
+				comment: // "Строка"
+			line:
+				text: object[
+				str: "key2"
+				text: ] 
+				comment: // 1
+			line:
+				text: object[
+				str: "key3"
+				text: ] 
+				comment: // true
+	voice: HTML_RU_Hello_World
+	time: 16000
+slide:
+	see:
+		line h1: Строки
+		code w-100:
+			line:
+				str: 'Text'
+			line:
+				str: "Text"
+			line:
+				str: \`Text\`
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		line h1: Условные операторы
+		code w-100:
+			line:
+				comment:  // синтаксис оператора if
+			line:
+				func: if
+				text:  (
+				text: условие/выражения
+				text: )
+			line:
+				text: 	инструкция/код
+			line:
+				comment:  // синтаксис оператора if с 2 и больше инструкциями
+			line:
+				func: if
+				text:  (
+				text: условие/выражения
+				text: )
+				text:  {
+			line:
+				text: 	инструкция/код
+			line:
+				text: 	инструкция/код
+			line:
+				text:  }
+			line:
+				comment:  // синтаксис оператора if else
+			line:
+				func: if
+				text:  (
+				text: условие/выражения
+				text: )
+			line:
+				text: 	инструкция/код
+			line:
+				func: else
+			line:
+				text: 	инструкция/код
+			line:
+				comment:  // синтаксис оператора if else с 2 и больше инструкциями
+			line:
+				func: if
+				text:  (
+				text: условие/выражения
+				text: ) {
+			line:
+				text: 	инструкция/код
+			line:
+				text: 	инструкция/код
+			line:
+				text: }
+				func:  else
+				text:  {
+			line:
+				text: 	инструкция/код
+			line:
+				text: 	инструкция/код
+			line:
+				text:  }
+			line:
+				comment:  // пример
+			line:
+				func: var
+				text:  a
+				oper:  =
+				number:  1
+				oper: ,
+				text:  b
+				oper:  =
+				number:  2
+			line:
+				func: if
+				text:  (
+				text: a
+				oper:  >
+				text:  b
+				text: ) {
+			line:
+				text: 	инструкция/код
+			line:
+				text: 	инструкция/код
+			line:
+				text: }
+				func:  else
+				text:  {
+			line:
+				text: 	инструкция/код
+			line:
+				text: 	инструкция/код
+			line:
+				text:  }
+	voice: HTML_RU_Hello_World
+	time: 19000
+slide:
+	see:
+		h1 text: Полезные ссылки
+		line html: <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">"Mozilla Developer N web docs" - Веб документация.</a>
+		line html: <a href="https://html5book.ru/">"HTML5 BOOK" - Учебник</a>
+		line html: <a href="http://htmlbook.ru/">"HTML book" - Учебник</a>
+		line html: <a href="https://codebra.ru/">"CODEBRA" - Учебник с практикой</a>
+		line html: <a href="www.cyberforum.ru/">"CyberForum" - Форум</a>
+		line html: <a href="https://ru.stackoverflow.com/">"StackOverflow" - Форум</a>
+		line html: <a href="http://programmersforum.ru/">"Клуб ПРОграммистов" - Форум</a>
+		line html: <a href="http://forum.vingrad.ru/">"VINGRAD" - Форум</a>
+		line html: <a href="http://www.html.by/">"HTML" - Форум</a>
+	voice: HTML_RU_Hello_World
+	time: 6000
+slide:
+	see:
+		line h1: Переменные
+		line text: 
+		col:
+			line:
+				name: body
+				oper: =
+				func: class
+				str: "className"
+				text: текст
+				number: 1
+		w-100:
+	voice: HTML_RU_Hello_World
+	time: 6000`

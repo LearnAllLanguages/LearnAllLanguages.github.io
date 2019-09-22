@@ -1,0 +1,46 @@
+.body_menu
+	#menu.see
+		.menu_item_wrap
+			.menu_item.menu_item_active.Lang_item.accent#EN(onclick='Lang_toggle("EN")') ENG
+			.menu_item.Lang_item.accent#RU(onclick='Lang_toggle("RU")') РУС
+		.menu_item_wrap
+			.menu_item.Lang_item#ZHO(onclick='Lang_toggle("ZHO")') 中文
+			.menu_item.Lang_item#SPA(onclick='Lang_toggle("SPA")') Español
+		.menu_item.menu_item_header#Language Language
+		.menu_item_wrap
+			.menu_item.Language_item#language_HTML.accent(onclick='load_lang("HTML"); Language_active(this.id)') HTML & CSS
+		.menu_item_wrap
+			.menu_item.Language_item#language_JS(onclick='load_lang("JS"); Language_active(this.id)') JS
+			.menu_item.Language_item#language_PYTON(onclick='load_lang(PYTON); Language_active(this.id)') PYTON
+		.menu_item_wrap
+			.menu_item.Language_item#language_JAVA(onclick='load_lang("JAVA"); Language_active(this.id)') JAVA
+			.menu_item.Language_item#language_C_sharp(onclick='run_language("C_sharp"); Language_active(this.id)') C#
+		.menu_item_wrap
+			.menu_item.Language_item#language_NeuralNetworks(onclick='load_lang("NeuralNetworks"); Language_active(this.id)') Neural networks
+		.menu_item.menu_item_header#Theme Theme
+		.menu_item_wrap
+			.menu_item#Light(onclick='Theme_lite()') Light
+			.menu_item#Dark(onclick='Theme_dark()') Dark
+		.menu_item.menu_item_header#Font_size Font size
+		.menu_item_wrap
+			.menu_item(onclick='Font_size(-1)') -
+			.menu_item#Font_size_data
+			.menu_item(onclick='Font_size(1)') +
+		.menu_item.menu_item_header#Font Font
+		.menu_item_wrap
+			input.menu_item#FontInput(placeholder='')
+		.menu_item#Download(onclick='parse_slide(downloadSlide); pause()') Download 
+		.menu_item#Support(onclick='parse_slide(supportSlide); pause()') Support 
+		.menu_item#Author(onclick='parse_slide(authorSlide); pause()') Author
+		.menu_item#Account(onclick='parse_slide(accountSlide); pause()') Account
+
+	#body_wrap.container-fluid(onclick='menu_off()')
+		#body(style='font-family: "Arial";')
+			.card
+				.card-body
+					.card-title.h1 WEB
+					.card-text.menu_item.Language_item#language_HTML(onclick='load_lang("HTML"); Language_active(this.id)') HTML & CSS
+					.card-text.menu_item.Language_item#language_JS(onclick='load_lang("JS"); Language_active(this.id)') JS
+					.card-text.menu_item.Language_item#language_HTML(onclick='load_lang("HTML"); Language_active(this.id)') VUE
+			//- 		.text(onclick='run_language(language_CSS)') CSS
+			//- .card
