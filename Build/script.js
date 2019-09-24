@@ -1,9 +1,7 @@
 //############################################
-// JQuery
+// JQuery2
 //############################################
-var $, Close_full_screen, Font_size, Full_screen, Lang_toggle, Language_active, Test2, Theme_dark, Theme_lite, allSlides, allSlidesLength, autoHover, back, clearIntervalMini, closeFullScreen, download_voice, fullScreen, full_screen, id, lang_name_mod_var, menu, menu_off, menu_toggle, next, numberNextSlide, options, parse_array, parse_row, parse_slide, pause, print, rewind, rewind_pause, rewind_play, run, run_language, setI, slider, tesssss, time;
-
-tesssss = 4;
+var $, Close_full_screen, Font_size, Full_screen, Lang_toggle, Language_active, Test2, Theme_dark, Theme_lite, allSlides, allSlidesLength, autoHover, back, clearIntervalMini, closeFullScreen, download_voice, fullScreen, full_screen, id, lang_name_mod_var, menu, menu_off, menu_toggle, next, numberNextSlide, options, parse_array, parse_row, parse_slide, pause, print, rewind, rewind_pause, rewind_play, run, run_language, setI, slider, time;
 
 $ = function(selector) {
   return document.querySelectorAll(selector);

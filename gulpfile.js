@@ -10,7 +10,7 @@ gulp.task('html', function(){
 		.pipe(pug({
 			pretty: false
 		}))
-		.pipe(gulp.dest('Build'))
+		.pipe(gulp.dest('./'))
 		.pipe(livereload());
 });
 
